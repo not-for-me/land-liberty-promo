@@ -1,0 +1,12 @@
+<div class="carousel">
+  <ol class="carousel-indicators">
+    <li *ngFor="let img of images"></li>
+  </ol>
+  <!--<ol class="slides" [@carousel]="curSlide">-->
+  <ol class="slides">
+    <li *ngFor="let image of images">
+      <h2>{{image.title}}</h2>
+      <a [href]="image.link" target="_blank"><img src="{{image.url}}" alt=""></a>
+    </li>
+  </ol>
+</div>

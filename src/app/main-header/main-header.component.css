@@ -1,0 +1,14 @@
+:host {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+    :host {
+        width: 80%;
+        font-size: 2em;
+    } 
+} 
