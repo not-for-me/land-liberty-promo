@@ -3,12 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MainPageComponent } from './main-page';
 import { RealEstatePageComponent } from './real-estate-page';
-import { InsurancePageComponent } from './insurance-page';
+// import { InsurancePageComponent } from './insurance-page';
 
 export const routes: Routes = [
     { path: '', component: MainPageComponent },
-    { path: 'real-estate', component: RealEstatePageComponent },
-    { path: 'insurance', component: InsurancePageComponent }
+    { path: 'real-estate', component: RealEstatePageComponent }
 ];
 
 @NgModule({

@@ -1,0 +1,13 @@
+<section>
+<div fxLayout="column" fxLayoutAlign="space-around center">
+    <md-card class="question-section">
+        <md-card-content>
+            <p [innerHtml]="questionInfo.problemHtml"></p>
+        </md-card-content>
+        <md-card-actions fxLayout="row" fxLayoutAlign="space-around center">
+            <button md-fab color="primary" (click)="clickedYes()">예</button>
+            <button md-fab color="primary" (click)="clickedNo()">아니오</button>
+        </md-card-actions>
+    </md-card>
+</div>
+</section>

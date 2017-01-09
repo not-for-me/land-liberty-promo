@@ -17,7 +17,7 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
-$land-libery-promo-app-primary: md-palette($md-deep-orange);
+$land-libery-promo-app-primary: md-palette($md-lime);
 $land-libery-promo-app-accent:  md-palette($md-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -34,3 +34,8 @@ $land-libery-promo-theme: md-light-theme($land-libery-promo-app-primary, $land-l
 @include docs-site-typography-theme($land-libery-promo-theme);
 @include header-nav-theme($land-libery-promo-theme);
 @include main-selector-theme($land-libery-promo-theme);
+
+html, body {
+    height: 100%;
+    margin: 0;
+}

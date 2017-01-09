@@ -1,0 +1,28 @@
+<div md-dialog-title>
+  <span>싱글</span>
+</div>
+
+<md-dialog-content>
+  <div [ngSwitch]="compositionType">
+    <div *ngSwitchCase="'type-1'">
+      <ll-insurance-type [contentInfo]="getContentInfo(1)" (onClickedDetail)="closeDialog()"></ll-insurance-type> 
+    </div>
+    <div *ngSwitchCase="'type-2'">
+      <ll-insurance-type [contentInfo]="getContentInfo(1)" (onClickedDetail)="closeDialog()"></ll-insurance-type> 
+      <div>+</div> 
+      <ll-insurance-type [contentInfo]="getContentInfo(2)" (onClickedDetail)="closeDialog()"></ll-insurance-type> 
+    </div>
+    <div *ngSwitchCase="'type-3'">
+      <ll-insurance-type [contentInfo]="getContentInfo(1)" (onClickedDetail)="closeDialog()"></ll-insurance-type> 
+      <div>+</div> 
+      <ll-insurance-type [contentInfo]="getContentInfo(2)" (onClickedDetail)="closeDialog()"></ll-insurance-type> 
+      <div>+</div> 
+      <ll-insurance-type [contentInfo]="getContentInfo(3)" (onClickedDetail)="closeDialog()"></ll-insurance-type> 
+    </div>
+  </div>
+
+</md-dialog-content>
+
+<md-dialog-actions fxLayout="row" fxLayoutAlign="end ">
+  <button md-raised-button md-dialog-close>닫기</button>
+</md-dialog-actions>

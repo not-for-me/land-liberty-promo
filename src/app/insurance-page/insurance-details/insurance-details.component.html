@@ -1,0 +1,10 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <md-card>
+    <md-tab-group [selectedIndex]="selectedTab">
+      <md-tab *ngFor="let insuranceType of insuranceTypes" [label]="insuranceType.title">
+        {{insuranceType.desc}}
+        더 자세한 내용....
+      </md-tab>
+    </md-tab-group>
+  </md-card>
+</div>
